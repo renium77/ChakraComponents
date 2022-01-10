@@ -5,17 +5,18 @@ import {MdCheckCircle, MdSettings} from 'react-icons/md'
 function HeroMain() {
     return (
         <div>
-            <Box bg='black'
-            pt='100px'
+            <Box
+            pt='150px'
             >
-                <Container maxW='3xl'> 
+                <Container maxW='6xl'> 
                     <Stack 
                     as={Box}
                     textAlign='center'
                     > 
-                    <Heading color='white' 
-                    fontSize={{base:'3xl',md:'6xl'}}
+                    <Heading color='black' 
+                    fontSize={{base:'3xl',md:'7xl'}}
                     textAlign='center'
+                    fontWeight='extrabold'
                     >
                         Free Repository of 
                         <chakra.span bgClip='text' bgGradient='linear(to-l, #7928CA, #FF0080)'> Chakra-UI Components </chakra.span>
@@ -23,7 +24,7 @@ function HeroMain() {
                     </Heading>
 
 
-                    <Text color='white' fontSize={{base:'xl',md:'2xl'}} pt='50px'>
+                    <Text color='black' fontSize={{base:'xl',md:'2xl'}} pt='50px'>
                         Chakra Components is a growing collection of responsive Chakra-UI components, 
                         ready for dev's to drop in the projects
                     </Text>
@@ -35,7 +36,7 @@ function HeroMain() {
                             Browse Components
                         </Button>
                         
-                        <Button fontSize='lg' p={6} borderRadius='2' _hover={{bg:'black', border:'2px', color:'white'}}>
+                        <Button bg='white' color='black' border='2px' fontSize='lg' p={6} borderRadius='2' _hover={{bg:'black', border:'2px', color:'white'}}>
                             Suggest Components
                         </Button>      
                     </SimpleGrid> 
