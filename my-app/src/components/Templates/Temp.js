@@ -9,7 +9,6 @@ function Temp() {
         <div>
            <TempNav/>
            <TempHero/>
-           <HeroCompCode/>
         </div>
     )
 }

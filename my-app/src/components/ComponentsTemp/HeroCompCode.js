@@ -1,11 +1,12 @@
-import { Container } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 import React from 'react'
 import Highlight from 'react-highlight'
 
 function HeroCompCode() {
     return (
         <div>
-            <Container maxW='6xl' bg='#011627' borderRadius='2xl' color='white'>
+            <Box pt='5'>
+            <Container overflow='scroll' fontSize={{base:'sm', md:'md'}} maxW={{base:'md', md:'6xl'}} bg='#011627' borderRadius='2xl' color='white'>
            <Highlight language="javascript">
             {`
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
@@ -64,6 +65,7 @@ function HeroCompCode() {
             `}
             </Highlight>
             </Container> 
+            </Box>
         </div>
     )
 }
