@@ -2,6 +2,7 @@ import { Container, Heading } from '@chakra-ui/react'
 import React from 'react'
 import FooterComp from '../ComponentsTemp/FooterComp'
 import FooterCompCode from '../ComponentsTemp/FooterCompCode'
+import Footer from '../Footer'
 import TempNav from './TempNav'
 
 function TempFooter() {
@@ -14,6 +15,7 @@ function TempFooter() {
             </Heading>
             <FooterComp/>
             <FooterCompCode/>
+            <Footer/>
             </Container>
             
         </div>

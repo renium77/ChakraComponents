@@ -29,7 +29,7 @@ function TempNav() {
                         <Menu>
                         <MenuButton
                             display='inline-flex'
-                            colorScheme='black'
+                            
                             as={IconButton}
                             aria-label='Options'
                             icon={<AiOutlineMenu />}
@@ -49,20 +49,9 @@ function TempNav() {
                                         Page Section
                                     </DrawerHeader>
                                         <Button variant='link' p='2'>Hero</Button>
-                                        <Button variant='link' p='2'>Features</Button>
-                                        <Button variant='link' p='2'>Footers</Button>
-                                        <Button variant='link' p='2'>Testimonials</Button>
-                                        <Button variant='link' p='2'>Pricing</Button>
-                                        <Button variant='link' p='2'>Statistics</Button>
-                                        <Button variant='link' p='2'>Carousel</Button>
-                                        <Button variant='link' p='2'>Product Details</Button>
-                                         <DrawerHeader align='center'>    
-                                        Page Section
-                                        </DrawerHeader>
-                                        <Button variant='link' p='2'>Hero</Button>
-                                        <Button variant='link' p='2'>Statistics</Button>
-                                        <Button variant='link' p='2'>Carousel</Button>
-                                        <Button variant='link' p='2'>Product Details</Button>
+                                        <Button variant='link' p='2'>Footer</Button>
+                                        <Button variant='link' p='2'>Stats</Button>
+                                        <Button variant='link' p='2'>Featur</Button>
                                 </DrawerContent>
 
                             </Drawer>

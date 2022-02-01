@@ -10,6 +10,8 @@ import HeroComp from './components/ComponentsTemp/HeroComp';
 import FooterComp from './components/ComponentsTemp/FooterComp';
 import TempHero from './components/Templates/TempHero';
 import TempFooter from './components/Templates/TempFooter';
+import TempStats from './components/Templates/TempStats';
+import TempFeatures from './components/Templates/TempFeatures';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path='temp' element={<Temp/>}/>
           <Route path='temphero' element={<TempHero/>}/>
           <Route path='tempfooter' element={<TempFooter/>}/>
+          <Route path='tempstats' element={<TempStats/>}/>
+          <Route path='tempfeatures' element={<TempFeatures/>}/>
         </Routes>
       
       
