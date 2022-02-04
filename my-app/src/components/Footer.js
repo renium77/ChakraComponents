@@ -1,5 +1,6 @@
 import { Container, Divider, Heading, Link, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
+import {Link as ReactLink} from 'react-router-dom'
 
 function Footer() {
     return (
@@ -10,25 +11,24 @@ function Footer() {
                         <Heading fontWeight='medium' fontSize='2xl'>
                             Product
                         </Heading>
-                        <Link fontSize='lg'>Page Section</Link>
-                        <Link fontSize='lg'>Navigation</Link>
-                        <Link fontSize='lg'>Components</Link>
+                        <ReactLink to='/temphero' fontSize='lg'>Hero</ReactLink>
+                        <ReactLink to='/tempfooter' fontSize='lg'>Footer</ReactLink>
+                        <ReactLink to='/temphero' fontSize='lg'>Components</ReactLink>
                     </Stack>
 
                     <Stack align='flex-start'>
                         <Heading fontWeight='medium' fontSize='2xl'>
                             Social
                         </Heading>
-                        <Link fontSize='lg'>Github Repository</Link>
-                        <Link fontSize='lg'>Figma Design Resources</Link>
-                        <Link fontSize='lg'>Components</Link>
+                        <Link fontSize='md' href='https://github.com/renium77/ChakraComponents'>Github Repository</Link>
+                        <Link fontSize='md'>Figma Design Resources</Link>
                     </Stack>
 
                     <Stack align='flex-start'>
                         <Heading fontWeight='medium' fontSize='2xl'>
                             Support us
                         </Heading>
-                        <Link fontSize='lg'>Buy me coffee</Link>
+                        <Link fontSize='md'>Buy me coffee</Link>
                     </Stack>
                 </SimpleGrid>
             </Container>

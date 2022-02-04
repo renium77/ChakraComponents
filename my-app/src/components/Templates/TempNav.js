@@ -1,6 +1,7 @@
-import { Box, Button, chakra, Container, Drawer, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Link, Menu, MenuButton, MenuItem, MenuList, Text, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, chakra, Container, Drawer, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Menu, MenuButton, useDisclosure } from '@chakra-ui/react'
 import React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
+import {Link as ReactLink} from 'react-router-dom'
 
 function TempNav() {
 
@@ -51,7 +52,9 @@ function TempNav() {
                                         <Button variant='link' p='2'>Hero</Button>
                                         <Button variant='link' p='2'>Footer</Button>
                                         <Button variant='link' p='2'>Stats</Button>
-                                        <Button variant='link' p='2'>Featur</Button>
+                                        <Button variant='link' p='2'>Features</Button>
+                                        <Button variant='link' p='2'>Result</Button>
+                                        <Button variant='link' p='2'>Cards</Button>
                                 </DrawerContent>
 
                             </Drawer>
@@ -59,11 +62,11 @@ function TempNav() {
                     </Box>
 
                      <Flex align='center'>
-                    <Link> 
+                    <ReactLink to='/hero'> 
                         <Heading as='h2' fontSize='xl' textAlign='right' color='black'>
                             <chakra.span color='#7000fe'>.</chakra.span>chakra<br/>components
                         </Heading>
-                    </Link> 
+                    </ReactLink> 
 
                     
                 </Flex>

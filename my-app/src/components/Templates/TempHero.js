@@ -1,4 +1,4 @@
-import { AspectRatio, Code, Container, Heading, Stack } from '@chakra-ui/react'
+import { Container, Heading} from '@chakra-ui/react'
 import React from 'react'
 import HeroComp from '../ComponentsTemp/HeroComp'
 import HeroCompCode from '../ComponentsTemp/HeroCompCode'

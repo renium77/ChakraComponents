@@ -1,4 +1,4 @@
-import { Box, Button, chakra, Container, Drawer,Link, Flex, Heading, HStack, IconButton, Menu, MenuButton, MenuItem, MenuList, Stack, Text, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, chakra, Container, Link, Flex, Heading, IconButton, Menu, MenuButton, MenuItem, MenuList, Stack} from '@chakra-ui/react'
 import React from 'react'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {Link as ReactLink} from 'react-router-dom'
@@ -21,11 +21,11 @@ function Navbar() {
             pl={{base:'10px', md:'30px'}}
             >
                 <Flex align='center'>
-                    <Link> 
+                    <ReactLink to='/hero'> 
                         <Heading as='h2' fontSize='xl' textAlign='right' color='black'>
-                            <chakra.span color='#7000fe'>.</chakra.span>chakra<br/>components
+                            <chakra.span color='teal.400'>.</chakra.span>chakra<br/>components
                         </Heading>
-                    </Link> 
+                    </ReactLink> 
 
                     
                 </Flex>
@@ -37,17 +37,16 @@ function Navbar() {
                         <Menu>
                         <MenuButton
                             display={{base:'inline-flex', md:'none'}}
-                            color='white'
                             as={IconButton}
                             aria-label='Options'
                             icon={<AiOutlineMenu />}
                             variant='outline'
                         />
                         <MenuList>
-                            <MenuItem  command='⌘T'>
+                            <MenuItem>
                             Templates
                             </MenuItem>
-                            <MenuItem  command='⌘N'>
+                            <MenuItem>
                             Github
                             </MenuItem>
                         </MenuList>
@@ -67,7 +66,7 @@ function Navbar() {
                             border='black'
                         >
                             <Button bg='white' fontSize="lg" color="black" _hover={{bg:'white'}}><ReactLink to='/temp'>Templates</ReactLink></Button>
-                            <Button bg='white' fontSize="lg" color="black" _hover={{bg:'white'}}><ReactLink to='/post'>Github</ReactLink></Button>
+                            <Button bg='white' fontSize="lg" color="black" _hover={{bg:'white'}}><Link href='https://github.com/renium77/ChakraComponents'>Github</Link></Button>
                         </Stack>
 
                         

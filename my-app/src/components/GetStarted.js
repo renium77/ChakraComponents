@@ -1,25 +1,25 @@
-import { Box, chakra, Container, Heading, SimpleGrid, Stat, StatLabel, StatNumber, Text } from '@chakra-ui/react'
+import { Box, chakra, Container, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import React from 'react'
 
 function GetStarted() {
     return (
         <div>
-            <Box align='center' pt='50px'>
+            <Container align='center' pt='50px' maxW='6xl'>
                 <Heading>
-                    Getting Started in <chakra.span bgClip='text' bgGradient='linear(to-l, #7928CA, #FF0080)'>3 easy steps</chakra.span>
+                    Getting Started in <chakra.span bgClip='text' bgGradient='linear(to-r, teal.500, teal.300)'>3 easy steps</chakra.span>
                 </Heading>
-            </Box>
+            </Container>
 
             <Container maxW='6xl'>
             <SimpleGrid columns={{base:1, md:3}} spacing={{ base: '50px', lg: 8 }} pt='50px'>
 
                 
                     <Box maxW='400px' align='center' boxShadow='lg' rounded='lg' p={6}>
-                            <Text color='white' fontWeight='bold' fontSize='lg' borderRadius='2xl' p={3} h='50px' w='50px' bg='#7000fe'>
+                            <Text color='white' fontWeight='bold' fontSize='lg' borderRadius='2xl' p={3} h='50px' w='50px' bg='teal.500'>
                                 1
                             </Text>
 
-                            <Text fontSize='lg' fontWeight='bold' pt='20px'>
+                            <Text fontSize='xl' fontWeight='bold' pt='20px'>
                                 Find your Template
                             </Text>
 
@@ -30,11 +30,11 @@ function GetStarted() {
                     </Box>
 
                     <Box maxW='400px' align='center' boxShadow='lg' rounded='lg' p={6}>
-                            <Text color='white' fontWeight='bold' fontSize='lg' borderRadius='2xl' p={3} h='50px' w='50px' bg='#7000fe'>
+                            <Text color='white' fontWeight='bold' fontSize='lg' borderRadius='2xl' p={3} h='50px' w='50px' bg='teal.500'>
                                 2
                             </Text>
 
-                            <Text fontSize='lg' fontWeight='bold' pt='20px'>
+                            <Text fontSize='xl' fontWeight='bold' pt='20px'>
                                 Copy the code
                             </Text>
 
@@ -45,11 +45,11 @@ function GetStarted() {
                     </Box>
 
                     <Box maxW='400px' align='center' boxShadow='lg' rounded='lg' p={6}>
-                            <Text color='white' fontWeight='bold' fontSize='lg' borderRadius='2xl' p={3} h='50px' w='50px' bg='#7000fe'>
+                            <Text color='white' fontWeight='bold' fontSize='lg' borderRadius='2xl' p={3} h='50px' w='50px' bg='teal.500'>
                                 3
                             </Text>
 
-                            <Text fontSize='lg' fontWeight='bold' pt='20px'>
+                            <Text fontSize='xl' fontWeight='bold' pt='20px'>
                                 Enjoy your free Time
                             </Text>
 
